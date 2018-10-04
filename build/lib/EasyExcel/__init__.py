@@ -1,2 +1,2 @@
 name = "EasyExcel"
-from .converter import Converter
+from .converter import PythonExcelConverter
