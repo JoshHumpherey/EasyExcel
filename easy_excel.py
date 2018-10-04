@@ -1,6 +1,9 @@
+import pandas as pd
+from openpyxl import load_workbook
+
 class PythonExcelConverter():
     """ Class for interfacing between the python client and our excel spreadsheet """
-    
+
     def __init__(self, filename, extension, sheet_name, output_filename):
         """
         Initializes the Python Excel CONVERTER class, loads the workbook for editing, and also
@@ -11,7 +14,7 @@ class PythonExcelConverter():
         self.filename = filename
         self.extension = extension
         self.output_filename = output_filename + self.extension
-        x_1 = pd.ExcelFile(self.filename + self.ext)
+        x_1 = pd.ExcelFile(self.filename + self.extension)
         data = x_1.parse(sheet_name)
         self.data = data
 
@@ -30,4 +33,4 @@ class PythonExcelConverter():
     def save_file(self):
         """ Saves our excel file """
         self.work_book.save(self.output_filename)
-        print("Finished analyzing " + str(self.filename + self.ext))
+        print("Finished analyzing " + str(self.filename + self.extension))

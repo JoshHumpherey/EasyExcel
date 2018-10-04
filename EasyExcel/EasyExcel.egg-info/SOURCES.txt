@@ -1,0 +1,6 @@
+README.md
+setup.py
+EasyExcel.egg-info/PKG-INFO
+EasyExcel.egg-info/SOURCES.txt
+EasyExcel.egg-info/dependency_links.txt
+EasyExcel.egg-info/top_level.txt
