@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="EasyExcel",
-    version="0.0.1",
+    version="1.0",
     author="Josh Humphrey",
     author_email="jhumphrey321@gmail.com",
     description="A small library to interact with python and excel",
