@@ -12,7 +12,6 @@ Description: # EasyExcel
         [![Build Status](https://travis-ci.org/JoshHumpherey/EasyExcel.svg?branch=master)](https://travis-ci.org/JoshHumpherey/EasyExcel)
         
 Platform: UNKNOWN
-Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 Description-Content-Type: text/markdown
