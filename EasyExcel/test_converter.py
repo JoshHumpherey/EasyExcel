@@ -48,6 +48,18 @@ class Test_Converter(unittest.TestCase):
         actual = list(test_converter.query_row(1))
         self.assertEqual(expected, actual)
 
+    def test_query_cell(self):
+        self.CreateSpreasheet('test_sheet.xlsx')
+        test_converter = converter.PythonExcelConverter('test_sheet', '.xlsx', 'Sheet1','test_sheet')
+        actual = test_converter.query_cell('A',0)
+        self.assertEqual('Rent', actual)
+
+    def test_write_to_cell(self):
+        self.CreateSpreasheet('test_sheet.xlsx')
+        test_converter = converter.PythonExcelConverter('test_sheet', '.xlsx', 'Sheet1','test_sheet')
+        test_converter.write_to_cell('A', 0, 'Eggs')
+        actual = test_converter.query_cell('A',0)
+        self.assertEqual('Eggs', actual)
 
 if __name__ == '__main__':
     unittest.main()

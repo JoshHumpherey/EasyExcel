@@ -28,13 +28,13 @@ class PythonExcelConverter():
 
     def query_cell(self, col_letter, col_number):
         """ Gets a value from a specific cell """
-        index = str(col_letter + col_number)
-        return self.work_sheet[index]
+        cell = str(col_letter + str(col_number))
+        return self.work_sheet[cell][0].value
 
     def write_to_cell(self, col_letter, col_number, val):
         """ Writes a value to a specific cell """
-        index = str(col_letter + col_number)
-        self.work_sheet[index] = val
+        index = str(col_letter + str(col_number))
+        self.work_sheet[index][0].value = val
 
     def write_list_to_column(self, the_list, col_letter, title, start):
         """ Takes a list object and writes it as a column in our excel sheet """
