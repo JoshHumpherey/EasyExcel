@@ -1,7 +1,6 @@
 # EasyExcel
 
-Test Status:
-[![Build Status](https://travis-ci.org/JoshHumpherey/EasyExcel.svg?branch=master)](https://travis-ci.org/JoshHumpherey/EasyExcel)
+[![Build Status](https://travis-ci.org/JoshHumpherey/EasyExcel.svg?branch=master)](https://travis-ci.org/JoshHumpherey/EasyExcel)  [![Coverage Status](https://coveralls.io/repos/github/JoshHumpherey/EasyExcel/badge.svg?branch=master)](https://coveralls.io/github/JoshHumpherey/EasyExcel?branch=master)
 
 ## Why Another Python-Excel Library?
 For a project I found myself needing to interact with some old excel spreadsheets and the common alternatives such as pandas and openpyxl weren't enough for me. The biggest need this library fills for me is being able to easily append my work to existing spreadsheets. Other libraries would overwrite the whole spreadsheet which doesn't do much good when you are trying to preserve the original data. This library also excels (pun intended) at interacting with non-standard formatting in spreadsheets. Pandas is a great library if you are in control of the data formatting but often that's not possible. All-in-all this project aims to help you get up and running in as little time as possible while maintaining an extremely easy to use interface. Enjoy!
