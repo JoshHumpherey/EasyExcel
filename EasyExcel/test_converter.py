@@ -60,6 +60,9 @@ class Test_Converter(unittest.TestCase):
         test_converter.write_to_cell('A', 0, 'Eggs')
         actual = test_converter.query_cell('A',0)
         self.assertEqual('Eggs', actual)
+        test_converter.write_to_cell('A', 0, 50)
+        actual = test_converter.query_cell('A',0)
+        self.assertEqual(50, actual)
 
 if __name__ == '__main__':
     unittest.main()

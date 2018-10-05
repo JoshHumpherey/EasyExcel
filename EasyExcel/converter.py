@@ -26,14 +26,14 @@ class PythonExcelConverter():
         """ Gets a column of data from our pandas dataframe """
         return self.data.iloc[row_number]
 
-    def query_cell(self, col_letter, col_number):
+    def query_cell(self, col_letter, row_number):
         """ Gets a value from a specific cell """
-        cell = str(col_letter + str(col_number))
+        cell = str(col_letter + str(row_number))
         return self.work_sheet[cell][0].value
 
-    def write_to_cell(self, col_letter, col_number, val):
+    def write_to_cell(self, col_letter, row_number, val):
         """ Writes a value to a specific cell """
-        index = str(col_letter + str(col_number))
+        index = str(col_letter + str(row_number))
         self.work_sheet[index][0].value = val
 
     def write_list_to_column(self, the_list, col_letter, title, start):

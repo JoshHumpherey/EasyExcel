@@ -31,14 +31,25 @@ import EasyExcel #you will call this by using EasyExcel.PythonExcelConverter(arg
  * title (string): This will be your column header
  * start (int): This is the row number that your header will appear on and your data will appear below
 
-4. #### save_file()
+4. #### query_row(row_number):
+ * row_number (int): The number of the row you want to get data from
+
+5. #### query_cell(col_letter, row_number):
+ * col_letter (string): The letter of the column you want to grab data from
+ * row_number (int): The number of the row you want to grab data from
+
+6. #### write_to_cell(col_letter, row_number, val):
+ * col_letter (string): The letter of the column you want to write data to
+ * row_number (int): The number of the row you want to write data to
+ * val (string/int): The data you want written to the cell
+
+7. #### save_file()
  * Requires no arguments. Simply saves the file as ouput_name in your working directory
 
  ## Contributions
  Want to help contribute? This is just the start for a small project I needed but I would love to expand it. There is a need for better excel libraries in the Python ecosystem and I'd love to help! To contribute, open a pull request with a well-documented change-log and I'll merge it. I would request that if you do, please use Pylint to make sure that this project follows the PEP8 standards for readability and future collaboration.
 
  ## Possible Additions
- * Query by row, not just column
  * Query a section of data instead of a whole column
  * Make spreadsheet cell addressing consistent instead of currently using both letters and numbers for column heads
  * add more flexibility for opening and saving spreadsheets
