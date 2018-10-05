@@ -26,6 +26,15 @@ class PythonExcelConverter():
         """ Gets a column of data from our pandas dataframe """
         return self.data.iloc[row_number]
 
+    def query_cell(self, col_letter, col_number):
+        """ Gets a value from a specific cell """
+        index = str(col_letter + col_number)
+        return self.work_sheet[index]
+
+    def write_to_cell(self, col_letter, col_number, val):
+        """ Writes a value to a specific cell """
+        index = str(col_letter + col_number)
+        self.work_sheet[index] = val
 
     def write_list_to_column(self, the_list, col_letter, title, start):
         """ Takes a list object and writes it as a column in our excel sheet """
