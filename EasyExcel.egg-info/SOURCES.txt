@@ -2,6 +2,7 @@ README.md
 setup.py
 EasyExcel/__init__.py
 EasyExcel/converter.py
+EasyExcel/test_converter.py
 EasyExcel.egg-info/PKG-INFO
 EasyExcel.egg-info/SOURCES.txt
 EasyExcel.egg-info/dependency_links.txt
